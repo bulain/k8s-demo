@@ -6,6 +6,7 @@ http://kubernetes.oss-cn-hangzhou.aliyuncs.com/minikube/releases/v0.25.0/minikub
 
 #minikube start --registry-mirror=https://xxxxxxxx.mirror.aliyuncs.com
 #minikube stop
+#minikube addons enable ingress
 
 #kubectl run nginx --image=nginx
 #kubectl expose deployment nginx --type=NodePort --port=80
