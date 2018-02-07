@@ -23,3 +23,5 @@ http://kubernetes.oss-cn-hangzhou.aliyuncs.com/minikube/releases/v0.25.0/minikub
 #kubectl create -f tomcat.yaml
 #kubectl create -f mysql.yaml
 
+#helm init --upgrade -i registry.cn-hangzhou.aliyuncs.com/google_containers/tiller:v2.8.0 --stable-repo-url https://kubernetes.oss-cn-hangzhou.aliyuncs.com/charts
+
