@@ -6,7 +6,8 @@ metadata:
     app: tomcat
 spec:
   ports:
-  - port: 8080
+  - port: 80
+    targetPort: 8080
   selector:
     app: tomcat
 ---
@@ -26,3 +27,19 @@ spec:
         image: tomcat:8.0.49-alpine
         ports:
         - containerPort: 8080
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: tomcat-ingress
+  labels:
+    app: tomcat
+spec:
+  rules:
+  - host:
+    http:
+      paths:
+      - path: /docs/
+        backend:
+          serviceName: tomcat
+          servicePort: 80
