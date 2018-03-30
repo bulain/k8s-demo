@@ -1,9 +1,12 @@
 # 安装minikube-windows-amd64.exe,重命名为minikube.exe
+<pre>
 http://kubernetes.oss-cn-hangzhou.aliyuncs.com/minikube/releases/v0.25.0/minikube-windows-amd64.exe
+</pre>
 # 安装virtualbox
 # 安装kubectl
-# 以上都添加到系统path路径
+ 以上都添加到系统path路径
 
+<pre>
 #minikube start --registry-mirror=https://xxxxxxxx.mirror.aliyuncs.com
 #minikube stop
 #minikube addons enable ingress
@@ -24,4 +27,5 @@ http://kubernetes.oss-cn-hangzhou.aliyuncs.com/minikube/releases/v0.25.0/minikub
 #kubectl create -f mysql.yaml
 
 #helm init --upgrade -i registry.cn-hangzhou.aliyuncs.com/google_containers/tiller:v2.8.0 --stable-repo-url https://kubernetes.oss-cn-hangzhou.aliyuncs.com/charts
+</pre>
 
